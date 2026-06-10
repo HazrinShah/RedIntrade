@@ -1411,7 +1411,11 @@ img { display: block; max-width: 100%; }
   .about-grid { grid-template-columns: 1fr; gap: 48px; }
   .about-visual { max-width: 500px; margin: 0 auto; }
   .whyus-inner { grid-template-columns: 1fr; gap: 48px; }
-  .whyus-visual { display: none; }
+  
+  /* Fix Why Us Visual on Tablet/Mobile */
+  .whyus-visual { display: block; max-width: 500px; margin: 24px auto 0; width: 100%; }
+  .whyus-image-wrapper { height: 350px; }
+
   .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
   .portfolio-item.featured-port { grid-column: span 1; grid-row: span 1; }
   .contact-grid { grid-template-columns: 1fr; }
@@ -1445,18 +1449,32 @@ img { display: block; max-width: 100%; }
   .people-grid { grid-template-columns: 1fr; }
   .social-grid { grid-template-columns: 1fr; }
   .portfolio-grid { grid-template-columns: 1fr; }
-  .hero-stats { gap: 0; }
+  
+  /* Fix Hero Stats stacking */
+  .hero-stats { 
+    flex-direction: column; 
+    gap: 24px; 
+    background: rgba(255, 255, 255, 0.03);
+    padding: 24px;
+    border-radius: var(--radius-lg);
+  }
+  .stat-divider { display: none; }
+  
   .about-pillars { grid-template-columns: 1fr; }
   .footer-top-grid { grid-template-columns: 1fr; }
-  .footer-bottom-inner { flex-direction: column; text-align: center; }
+  .footer-bottom-inner { flex-direction: column; text-align: center; gap: 16px; }
   .contact-form-wrap { padding: 24px; }
+  
+  /* Social Buttons stack on mobile */
+  .social-cta-row { flex-direction: column; width: 100%; gap: 16px; }
+  .social-pill { width: 100%; justify-content: center; }
 }
 
 @media (max-width: 480px) {
-  .hero-actions { flex-direction: column; align-items: center; }
-  .hero-stats { flex-direction: column; }
-  .stat-divider { width: 60px; height: 1px; }
+  .hero-actions { flex-direction: column; align-items: stretch; width: 100%; gap: 12px; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
   .section-title { font-size: 1.8rem; }
+  .whyus-image-wrapper { height: 250px; }
 }
 
 
