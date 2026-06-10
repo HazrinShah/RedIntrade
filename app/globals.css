@@ -72,7 +72,11 @@ img { display: block; max-width: 100%; }
 /* ── Utilities ── */
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 .accent { color: var(--red); }
-.section { padding: 100px 0; }
+.section {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
 
 .section-eyebrow {
   font-family: var(--font-heading);
@@ -483,9 +487,9 @@ img { display: block; max-width: 100%; }
   align-items: center;
 }
 
-.about-visual { position: relative; }
+.about-visual { position: relative; width: 100%; }
 
-.about-img-wrapper { position: relative; }
+.about-img-wrapper { position: relative; width: 100%; }
 
 .about-img-main {
   border-radius: var(--radius-lg);
@@ -1410,7 +1414,7 @@ img { display: block; max-width: 100%; }
 @media (max-width: 1024px) {
   .services-img-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; gap: 48px; }
-  .about-visual { max-width: 500px; margin: 0 auto; }
+  .about-visual { max-width: 500px; margin: 0 auto; width: 100%; }
   .whyus-inner { grid-template-columns: 1fr; gap: 48px; }
   
   /* Fix Why Us Visual on Tablet/Mobile */
