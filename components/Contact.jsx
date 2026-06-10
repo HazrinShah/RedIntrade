@@ -197,12 +197,10 @@ export default function Contact() {
                     onChange={handleChange}
                   >
                     <option value="">Select a service...</option>
-                    <option value="film">Film & Drama Production</option>
-                    <option value="broadcast">Broadcasting Services</option>
+                    <option value="seminar">Seminar and Training</option>
+                    <option value="drama">Drama Production</option>
                     <option value="events">Event Management</option>
-                    <option value="artist">Artist Management</option>
-                    <option value="equipment">Equipment Rental</option>
-                    <option value="consulting">Consultancy & Training</option>
+                    <option value="gifts">Corporate &amp; Government Gifts Supplier</option>
                     <option value="other">Other</option>
                   </select>
                 </div>

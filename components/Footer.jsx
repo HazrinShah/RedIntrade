@@ -41,12 +41,10 @@ export default function Footer() {
           <div className="footer-links-col" id="footer-links-services">
             <h4>Services</h4>
             <ul>
-              <li><a href="#services">Equipment Rental</a></li>
+              <li><a href="#services">Seminar and Training</a></li>
               <li><a href="#services">Drama Production</a></li>
               <li><a href="#services">Event Management</a></li>
-              <li><a href="#services">Team Building</a></li>
-              <li><a href="#services">Artists Management</a></li>
-              <li><a href="#services">Corporate Video & Videography</a></li>
+              <li><a href="#services">Corporate &amp; Government Gifts</a></li>
             </ul>
           </div>
           <div className="footer-links-col" id="footer-links-company">
@@ -91,7 +89,6 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <p>© 2025 Redintrade Sdn Bhd. All rights reserved.</p>
-          <p>Designed with Love in Kuala Lumpur</p>
         </div>
       </div>
     </footer>

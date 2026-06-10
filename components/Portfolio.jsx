@@ -22,6 +22,7 @@ export default function Portfolio() {
   const filterBtns = [
     { label: "All", filter: "all" },
     { label: "Production", filter: "production" },
+    { label: "Events", filter: "events" },
   ];
 
   const portfolioItems = [
@@ -71,6 +72,37 @@ export default function Portfolio() {
         role: "Pre-produksi, Penggambaran, Pasca-Produksi, Reka Bunyi",
         fullDesc:
           "Sebuah kisah tentang pengorbanan, kasih sayang, kesetiaan dan juga kenegaraan. Ditayangkan di TV2 pada 12 Disember 2022 (Isnin) pukul 9:00 P.M, menampilkan Aman Aziz sebagai Idris.",
+      },
+    },
+    {
+      id: "port-4",
+      cat: "events",
+      catLabel: "Konsert",
+      title: "Konsert Lah Ahmad — Jatuh Cinta Live At Istana Budaya",
+      desc: "Konsert solo Lah Ahmad di Istana Budaya, 7 Oktober 2023",
+      image: "/portfolio/lah-ahmad-konsert.jpg",
+      featured: false,
+      details: {
+        client: "Lah Ahmad / Istana Budaya",
+        year: "2023",
+        role: "Pengurusan Artis, Pengeluaran Konsert, Pengurusan Pentas",
+        fullDesc:
+          "Konsert solo Lah Ahmad bertajuk 'Jatuh Cinta' yang berlangsung di Istana Budaya pada 7 Oktober 2023 jam 8:30 PM. Redintrade terlibat dalam pengurusan artis, penghasilan konsert, dan pengurusan pentas bagi memastikan malam yang tidak dapat dilupakan oleh para peminat.",
+      },
+    },
+    {
+      id: "port-5",
+      cat: "production",
+      catLabel: "Produksi",
+      title: "Saringan Majlis Tilawah & Hafazan Al-Quran 2026",
+      desc: "Proses saringan Majlis Tilawah & Hafazan Al-Quran Peringkat Antarabangsa ke-66.",
+      image: "/portfolio/saringan-tilawah.jpg",
+      featured: false,
+      details: {
+        client: "Majlis Tilawah & Hafazan Al-Quran",
+        year: "2026",
+        role: "Produksi / Di Sebalik Tabir",
+        fullDesc: "Saksikan usaha, semangat dan perjalanan para peserta bersama hakim di sebalik tabir dalam proses saringan Majlis Tilawah & Hafazan Al-Quran Peringkat Antarabangsa 2026 yang ke-66.",
       },
     },
 

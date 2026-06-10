@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const servicesData = [
   {
-    id: "service-equipment",
-    image: "/services/equipment-rental.png",
-    title: "Equipment Rental",
+    id: "service-seminar",
+    image: "/services/seminar-training.jpg",
+    title: "Seminar and Training",
   },
   {
     id: "service-drama",
@@ -20,19 +20,9 @@ const servicesData = [
     title: "Event Management",
   },
   {
-    id: "service-team",
-    image: "/services/team-building.jpg",
-    title: "Team Building",
-  },
-  {
-    id: "service-artists",
-    image: "/services/artists-management.jpg",
-    title: "Artists Management",
-  },
-  {
-    id: "service-video",
-    image: "/services/videography.jpg",
-    title: "Corporate Video, Event Videography & Photography",
+    id: "service-gifts",
+    image: "/services/corporate-gifts.jpg",
+    title: "Corporate & Government Gifts Supplier",
   },
 ];
 
@@ -58,7 +48,7 @@ export default function Services() {
                   src={service.image}
                   alt={service.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="svc-img"
                 />
                 <div className="svc-overlay" />

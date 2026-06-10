@@ -72,7 +72,7 @@ export async function POST(request) {
   const smtpPort = process.env.SMTP_PORT || 587;
   const smtpUser = process.env.SMTP_USER;
   const smtpPass = process.env.SMTP_PASS;
-  const receiver = process.env.CONTACT_RECEIVER || "redintrade@gmail.com";
+  const receiver = process.env.CONTACT_RECEIVER || "hazrinshah0406@gmail.com";
 
   // Simulation mode (no SMTP configured)
   if (!smtpHost || !smtpUser || !smtpPass) {

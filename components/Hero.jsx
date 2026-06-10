@@ -74,8 +74,8 @@ export default function Hero() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            runCountUp(9, setYears);
-            runCountUp(200, setProjects);
+            runCountUp(11, setYears);
+            runCountUp(60, setProjects);
             runCountUp(50, setClients);
             observer.unobserve(entry.target);
           }
@@ -191,7 +191,7 @@ export default function Hero() {
           <div className="stat-item">
             <span className="stat-num">{projects}</span>
             <span className="stat-unit">+</span>
-            <span className="stat-label">Projects Delivered</span>
+            <span className="stat-label">Training &amp; Courses Provided</span>
           </div>
           <div className="stat-divider"></div>
           <div className="stat-item">

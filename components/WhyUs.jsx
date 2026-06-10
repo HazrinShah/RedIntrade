@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import PartnersMarquee from "./PartnersMarquee";
 
 export default function WhyUs() {
@@ -50,43 +51,26 @@ export default function WhyUs() {
             </div>
           </div>
           <div className="whyus-visual" id="whyus-visual">
-            <div className="whyus-card-stack">
-              <div className="wc wc-1">
-                <i className="fa-solid fa-film"></i>
-                <span>200+ Projects</span>
+            <div className="whyus-image-wrapper">
+              <div className="whyus-img-1">
+                <Image
+                  src="/services/videography.jpg"
+                  alt="Videography Services"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
               </div>
-              <div className="wc wc-2">
-                <i className="fa-solid fa-users"></i>
-                <span>50+ Clients</span>
+              <div className="whyus-img-2">
+                <Image
+                  src="/services/equipment-rental.png"
+                  alt="Equipment Rental"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="object-cover"
+                />
               </div>
-              <div className="wc wc-3">
-                <i className="fa-solid fa-star"></i>
-                <span>9+ Years</span>
-              </div>
-              <div className="wc-center">
-                <svg viewBox="0 0 120 36" xmlns="http://www.w3.org/2000/svg">
-                  <text
-                    x="2"
-                    y="30"
-                    fontFamily="Outfit, sans-serif"
-                    fontWeight="900"
-                    fontSize="26"
-                    fill="#C8102E"
-                  >
-                    RED
-                  </text>
-                  <text
-                    x="63"
-                    y="30"
-                    fontFamily="Outfit, sans-serif"
-                    fontWeight="300"
-                    fontSize="26"
-                    fill="#fff"
-                  >
-                    IN
-                  </text>
-                </svg>
-              </div>
+              <div className="whyus-accent-box"></div>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -8,13 +9,13 @@ export default function About() {
           <div className="about-visual" id="about-visual">
             <div className="about-img-wrapper">
               <div className="about-img-main">
-                <div className="about-img-placeholder">
-                  <i className="fa-solid fa-video"></i>
-                </div>
-              </div>
-              <div className="about-badge-float">
-                <i className="fa-solid fa-award"></i>
-                <span>Est. 2015</span>
+                <Image
+                  src="/about/about-collage.jpg"
+                  alt="Redintrade Operations and Team"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
               </div>
               <div className="about-glow"></div>
             </div>
@@ -42,10 +43,6 @@ export default function About() {
               <div className="pillar">
                 <i className="fa-solid fa-check-circle"></i>
                 <span>End-to-End Production</span>
-              </div>
-              <div className="pillar">
-                <i className="fa-solid fa-check-circle"></i>
-                <span>MATRADE Registered</span>
               </div>
             </div>
             <a href="#contact" className="btn btn-primary" id="about-cta">

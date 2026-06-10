@@ -4,7 +4,6 @@ import React from "react";
 
 export default function PartnersMarquee() {
   const partners = [
-    { name: "MATRADE REGISTERED", icon: "fa-solid fa-award" },
     { name: "IKIM MEDIA", icon: "fa-solid fa-microphone-lines" },
     { name: "RTM BROADCAST", icon: "fa-solid fa-tower-broadcast" },
     { name: "TV3 MALAYSIA", icon: "fa-solid fa-tv" },
@@ -19,7 +18,7 @@ export default function PartnersMarquee() {
   return (
     <div className="partners-marquee-container">
       <div className="section-eyebrow" style={{ textAlign: "center", marginBottom: "24px" }}>
-        Our Registered Bodies & Partners
+        Trusted Network & Affiliations
       </div>
       
       <div className="marquee-wrapper">
