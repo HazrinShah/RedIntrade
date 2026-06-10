@@ -491,6 +491,7 @@ img { display: block; max-width: 100%; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   position: relative;
+  width: 100%;
   aspect-ratio: 4/3;
   background: var(--dark-3);
   border: 1px solid rgba(255,255,255,0.07);
@@ -1463,7 +1464,10 @@ img { display: block; max-width: 100%; }
   .about-pillars { grid-template-columns: 1fr; }
   .footer-top-grid { grid-template-columns: 1fr; }
   .footer-bottom-inner { flex-direction: column; text-align: center; gap: 16px; }
-  .contact-form-wrap { padding: 24px; }
+  .contact-form-wrap { padding: 20px; }
+  .contact-map iframe { height: 220px !important; }
+  .contact-form { gap: 12px; }
+  .form-group input, .form-group select, .form-group textarea { padding: 10px 14px; font-size: 0.88rem; }
   
   /* Social Buttons stack on mobile */
   .social-cta-row { flex-direction: column; width: 100%; gap: 16px; }
